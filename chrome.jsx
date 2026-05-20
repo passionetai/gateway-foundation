@@ -139,7 +139,7 @@ function ChromeFooter() {
             </div>
             <div>
               <div className="footer-col-head">Contact</div>
-              <a href="mailto:hello@gatewaytobetterlife.org">hello@gatewaytobetterlife.org</a>
+              <a href="mailto:info@bettergatewayfoundation.org">info@bettergatewayfoundation.org</a>
               <a href="tel:+16174015060">+1 617 401 5060</a>
               <span className="footer-addr">Lagos, Nigeria</span>
             </div>

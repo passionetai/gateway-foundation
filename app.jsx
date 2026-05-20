@@ -210,9 +210,9 @@ function Who() {
 
 // ---------- Films ----------
 const FILMS = [
-  { title: "badfriend", duration: "3 min", tag: "Drama", desc: "Showing the effect of a bad friend who introduces a friend going through hard times to drugs.", video: "video/badfriend (1).mp4" },
-  { title: "menoffaithagainstabuse", duration: "3 min", tag: "Faith", desc: "Showing men of faith in christianity warning against sexual trafficking and drug abuse.", video: "video/menoffaithagainstabuse (1).mp4" },
-  { title: "adviceguy", duration: "3 min", tag: "Awareness", desc: "Showing a young male advising the youth against drug abuse.", video: "video/adviceguy (1).mp4" }
+  { title: "The Bad Influence", duration: "3 min", tag: "Drama", desc: "A young man already struggling through a rough patch is drawn into drugs by someone he trusted as a friend — a sobering look at how peer pressure quietly turns pain into addiction.", video: "video/badfriend (1).mp4" },
+  { title: "Voices of Faith", duration: "3 min", tag: "Faith", desc: "Christian leaders speak out against the twin evils of sexual trafficking and drug abuse, urging families and congregations to protect the vulnerable around them.", video: "video/menoffaithagainstabuse (1).mp4" },
+  { title: "A Word to the Youth", duration: "3 min", tag: "Awareness", desc: "Peer-to-peer, plain-spoken: a young man speaks directly to other young people about the real cost of drug abuse — and why walking away is strength, not weakness.", video: "video/adviceguy (1).mp4" }
 ];
 
 function Films() {
@@ -245,6 +245,13 @@ function Films() {
                   </video>
                 ) : (
                   <>
+                    <video
+                      muted
+                      playsInline
+                      preload="metadata"
+                      src={`${f.video}#t=1.5`}
+                      style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, objectFit: 'cover' }}
+                    />
                     <div className="film-overlay" aria-hidden="true"></div>
                     <div className="film-play" aria-hidden="true">
                       <Icon name="player-play-filled" size={18}/>

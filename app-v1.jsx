@@ -515,7 +515,7 @@ function Footer() {
             </div>
             <div>
               <div className="footer-col-head">Contact</div>
-              <a href="mailto:hello@gatewaytobetterlife.org">hello@gatewaytobetterlife.org</a>
+              <a href="mailto:info@bettergatewayfoundation.org">info@bettergatewayfoundation.org</a>
               <a href="tel:+2348000000000">+234 800 000 0000</a>
               <span className="footer-addr">Lagos, Nigeria</span>
             </div>
