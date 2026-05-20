@@ -116,18 +116,14 @@ function Leadership() {
               addiction &mdash; and to those rescued from trafficking, abuse, and exploitation.
             </p>
             <div className="founder-meta">
-              <a href="#" className="founder-link" onClick={e => e.preventDefault()}>
-                <ChromeIcon name="file-text" size={15}/>
-                Read full bio
-              </a>
               <a
                 href="https://chuckeke.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="founder-link"
               >
-                <ChromeIcon name="external-link" size={15}/>
-                chuckeke.com
+                <ChromeIcon name="file-text" size={15}/>
+                Read full bio
               </a>
             </div>
           </div>
