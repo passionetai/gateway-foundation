@@ -100,15 +100,15 @@ function Leadership() {
           <h2 className="section-title">The people behind the work.</h2>
         </header>
 
-        {/* Founder — featured row */}
+        {/* Grand Patron — featured row */}
         <article className="founder-card">
           <div className="founder-photo">
             <img src="assets/team/founder.jpeg" alt="Ambassador Reverend Chukwudi Eke"/>
           </div>
           <div className="founder-body">
-            <span className="founder-badge">Founder & Grand Patron</span>
+            <span className="founder-badge">Grand Patron</span>
             <h3 className="founder-name">Ambassador Reverend Chukwudi Eke</h3>
-            <div className="founder-role">Founder, board chair</div>
+            <div className="founder-role">Board chair</div>
             <p className="founder-bio">
               Ambassador Eke is a faith leader, advocate, and humanitarian who has spent his career
               standing alongside vulnerable communities across Nigeria. He founded Gateway to Better
@@ -116,14 +116,6 @@ function Leadership() {
               addiction &mdash; and to those rescued from trafficking, abuse, and exploitation.
             </p>
             <div className="founder-meta">
-              <a href="#" className="founder-link" onClick={e => e.preventDefault()}>
-                <ChromeIcon name="brand-linkedin" size={15}/>
-                LinkedIn
-              </a>
-              <a href="mailto:chukwudi@gtblf.org" className="founder-link">
-                <ChromeIcon name="mail" size={15}/>
-                chukwudi@gtblf.org
-              </a>
               <a href="#" className="founder-link" onClick={e => e.preventDefault()}>
                 <ChromeIcon name="file-text" size={15}/>
                 Read full bio
@@ -147,16 +139,6 @@ function Leadership() {
                 </div>
               </div>
               <p className="team-bio">{m.bio}</p>
-              <div className="team-foot">
-                <a href="#" className="team-link" onClick={e => e.preventDefault()}>
-                  <ChromeIcon name="brand-linkedin" size={13}/>
-                  LinkedIn
-                </a>
-                <a href={`mailto:${m.email}`} className="team-link">
-                  <ChromeIcon name="mail" size={13}/>
-                  {m.email}
-                </a>
-              </div>
             </article>
           ))}
         </div>
