@@ -3751,7 +3751,7 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
 }
 .media-social-embed {
-  min-height: 560px;
+  min-height: 720px;
   overflow: hidden;
   display: flex;
   align-items: stretch;
@@ -3761,11 +3761,16 @@ img { max-width: 100%; display: block; }
 }
 .media-social-embed-ig {
   background: #fafafa;
+  min-height: 640px;
 }
 .media-social-embed iframe,
 .media-social-embed blockquote {
   max-width: 100%;
   width: 100%;
+}
+.media-social-embed-tt iframe {
+  height: 100%;
+  min-height: 720px;
 }
 .media-social-info {
   padding: 16px;

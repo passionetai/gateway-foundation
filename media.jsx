@@ -148,9 +148,7 @@ function SocialEmbed({ item }) {
   const ref = React.useRef(null);
 
   React.useEffect(() => {
-    if (item.type === 'tiktok') {
-      loadScriptOnce('https://www.tiktok.com/embed.js', 'tiktok-embed-script');
-    } else if (item.type === 'instagram') {
+    if (item.type === 'instagram') {
       loadScriptOnce('https://www.instagram.com/embed.js', 'instagram-embed-script');
       // re-process Instagram embeds if the script is already on the page
       const tryProcess = () => {
@@ -166,17 +164,17 @@ function SocialEmbed({ item }) {
 
   if (item.type === 'tiktok') {
     return (
-      <div className="media-social-embed" ref={ref}>
-        <blockquote
-          className="tiktok-embed"
-          cite={`https://www.tiktok.com/${item.username}/video/${item.videoId}`}
-          data-video-id={item.videoId}
-          style={{ maxWidth: 605, minWidth: 325 }}
-        >
-          <section>
-            <a target="_blank" rel="noopener noreferrer" href={item.url}>{item.username}</a>
-          </section>
-        </blockquote>
+      <div className="media-social-embed media-social-embed-tt" ref={ref}>
+        <iframe
+          src={`https://www.tiktok.com/embed/v2/${item.videoId}?lang=en-US`}
+          title={item.title}
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          allowFullScreen
+          scrolling="no"
+          frameBorder="0"
+          loading="lazy"
+          style={{ width: '100%', height: '100%', border: 'none', background: '#000' }}
+        />
       </div>
     );
   }
