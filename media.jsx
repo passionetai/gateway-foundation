@@ -2,36 +2,46 @@
 
 // ---------- All our original videos ----------
 const OUR_VIDEOS = [
-  { title: "badfriend", desc: "Showing the effect of a bad friend who introduces a friend going through hard times to drugs.", video: "video/badfriend (1).mp4", tag: "Drama" },
-  { title: "menoffaithagainstabuse", desc: "Showing men of faith in christianity warning against sexual trafficking and drug abuse.", video: "video/menoffaithagainstabuse (1).mp4", tag: "Faith" },
-  { title: "adviceguy", desc: "Showing a young male advising the youth against drug abuse.", video: "video/adviceguy (1).mp4", tag: "Awareness" },
-  { title: "pastorsmessage", desc: "Showing pastors advising the people against drug abuse.", video: "video/pastorsmessage (1).mp4", tag: "Faith" },
-  { title: "drugtraffick", desc: "Showing the end of drug traffickers.", video: "video/drugtraffick (1).mp4", tag: "Awareness" },
-  { title: "landlord", desc: "Showing how people in authority e.g landlords can use their power to solicit sex from their tenants behind on rent.", video: "video/landlord (1).mp4", tag: "Awareness" }
+  { title: "The Bad Influence", desc: "A young man already struggling through a rough patch is drawn into drugs by someone he trusted as a friend — a sobering look at how peer pressure quietly turns pain into addiction.", video: "video/badfriend (1).mp4", tag: "Drama" },
+  { title: "Voices of Faith", desc: "Christian leaders speak out against the twin evils of sexual trafficking and drug abuse, urging families and congregations to protect the vulnerable around them.", video: "video/menoffaithagainstabuse (1).mp4", tag: "Faith" },
+  { title: "A Word to the Youth", desc: "Peer-to-peer, plain-spoken: a young man speaks directly to other young people about the real cost of drug abuse — and why walking away is strength, not weakness.", video: "video/adviceguy (1).mp4", tag: "Awareness" },
+  { title: "A Pastor's Plea", desc: "Pastors deliver a heartfelt message from the pulpit, calling on parents and young people to take a stand against drug abuse before another life is lost.", video: "video/pastorsmessage (1).mp4", tag: "Faith" },
+  { title: "The End of the Road", desc: "A dramatised look at how drug traffickers ultimately meet their downfall — a stark reminder that the trade always catches up with those who profit from it.", video: "video/drugtraffick (1).mp4", tag: "Awareness" },
+  { title: "Abuse of Power", desc: "When rent falls behind, the wrong landlord becomes a predator. A dramatised exposé of how authority can be twisted into sexual exploitation — and why silence isn't safety.", video: "video/landlord (1).mp4", tag: "Awareness" }
 ];
 
 // ---------- Related social media content ----------
 const SOCIAL_CONTENT = [
   {
-    title: "David Jones - Drug Awareness",
+    title: "David Jones — Speaking Out on Drug Awareness",
     platform: "TikTok",
-    url: "https://www.tiktok.com/@davidjonesdavidtiktok/video/7601245915663453447?_r=1&_t=ZT-96VJdwOlZte",
-    embed: '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidjonesdavidtiktok/video/7601245915663453447" data-video-id="7601245915663453447" style="max-width: 605px;min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@davidjonesdavidtiktok/video/7601245915663453447?_r=1&_t=ZT-96VJdwOlZte">@davidjonesdavidtiktok</a></section></blockquote><script async src="https://www.tiktok.com/embed.js"></script>'
+    type: "tiktok",
+    videoId: "7601245915663453447",
+    username: "@davidjonesdavidtiktok",
+    url: "https://www.tiktok.com/@davidjonesdavidtiktok/video/7601245915663453447?_r=1&_t=ZT-96VJdwOlZte"
   },
   {
-    title: "Rapper Medikal Using His Brand to Help Fight Drug Addiction",
-    platform: "TikTok / Instagram",
-    urls: [
-      { platform: "TikTok", url: "https://www.tiktok.com/@sikaofficial1z/video/7616427096478371092?_r=1&_t=ZT-96VLS6Ap44z" },
-      { platform: "Instagram", url: "https://www.instagram.com/reel/DYVWR3wsITo/?igsh=cWRobnE5anpsbjF3" }
-    ],
-    embed: '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sikaofficial1z/video/7616427096478371092" data-video-id="7616427096478371092" style="max-width: 605px;min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@sikaofficial1z/video/7616427096478371092?_r=1&_t=ZT-96VLS6Ap44z">@sikaofficial1z</a></section></blockquote><script async src="https://www.tiktok.com/embed.js"></script>'
+    title: "Rapper Medikal — Fighting Drug Addiction (TikTok)",
+    platform: "TikTok",
+    type: "tiktok",
+    videoId: "7616427096478371092",
+    username: "@sikaofficial1z",
+    url: "https://www.tiktok.com/@sikaofficial1z/video/7616427096478371092?_r=1&_t=ZT-96VLS6Ap44z"
   },
   {
-    title: "David Jones - Youth Drug Prevention",
+    title: "Rapper Medikal — Fighting Drug Addiction (Instagram)",
+    platform: "Instagram",
+    type: "instagram",
+    permalink: "https://www.instagram.com/reel/DYVWR3wsITo/",
+    url: "https://www.instagram.com/reel/DYVWR3wsITo/?igsh=cWRobnE5anpsbjF3"
+  },
+  {
+    title: "David Jones — Youth Drug Prevention Message",
     platform: "TikTok",
-    url: "https://www.tiktok.com/@davidjonesdavidtiktok/video/7029796545906199814?_r=1&_t=ZT-96VLklMai46",
-    embed: '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@davidjonesdavidtiktok/video/7029796545906199814" data-video-id="7029796545906199814" style="max-width: 605px;min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@davidjonesdavidtiktok/video/7029796545906199814?_r=1&_t=ZT-96VLklMai46">@davidjonesdavidtiktok</a></section></blockquote><script async src="https://www.tiktok.com/embed.js"></script>'
+    type: "tiktok",
+    videoId: "7029796545906199814",
+    username: "@davidjonesdavidtiktok",
+    url: "https://www.tiktok.com/@davidjonesdavidtiktok/video/7029796545906199814?_r=1&_t=ZT-96VLklMai46"
   }
 ];
 
@@ -97,6 +107,13 @@ function OurVideos() {
                   </video>
                 ) : (
                   <>
+                    <video
+                      muted
+                      playsInline
+                      preload="metadata"
+                      src={`${v.video}#t=1.5`}
+                      style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, objectFit: 'cover' }}
+                    />
                     <div className="film-overlay" aria-hidden="true"></div>
                     <div className="film-play" aria-hidden="true">
                       <ChromeIcon name="player-play-filled" size={22}/>
@@ -118,6 +135,70 @@ function OurVideos() {
 }
 
 // ---------- Social content section ----------
+function loadScriptOnce(src, id) {
+  if (document.getElementById(id)) return;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = src;
+  s.id = id;
+  document.body.appendChild(s);
+}
+
+function SocialEmbed({ item }) {
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    if (item.type === 'tiktok') {
+      loadScriptOnce('https://www.tiktok.com/embed.js', 'tiktok-embed-script');
+    } else if (item.type === 'instagram') {
+      loadScriptOnce('https://www.instagram.com/embed.js', 'instagram-embed-script');
+      // re-process Instagram embeds if the script is already on the page
+      const tryProcess = () => {
+        if (window.instgrm && window.instgrm.Embeds) {
+          window.instgrm.Embeds.process();
+        }
+      };
+      tryProcess();
+      const t = setTimeout(tryProcess, 600);
+      return () => clearTimeout(t);
+    }
+  }, [item]);
+
+  if (item.type === 'tiktok') {
+    return (
+      <div className="media-social-embed" ref={ref}>
+        <blockquote
+          className="tiktok-embed"
+          cite={`https://www.tiktok.com/${item.username}/video/${item.videoId}`}
+          data-video-id={item.videoId}
+          style={{ maxWidth: 605, minWidth: 325 }}
+        >
+          <section>
+            <a target="_blank" rel="noopener noreferrer" href={item.url}>{item.username}</a>
+          </section>
+        </blockquote>
+      </div>
+    );
+  }
+
+  if (item.type === 'instagram') {
+    return (
+      <div className="media-social-embed media-social-embed-ig" ref={ref}>
+        <blockquote
+          className="instagram-media"
+          data-instgrm-permalink={item.permalink}
+          data-instgrm-version="14"
+          style={{ background: '#FFF', border: 0, margin: 0, maxWidth: 540, minWidth: 280, width: '100%' }}
+        >
+          <a href={item.permalink} target="_blank" rel="noopener noreferrer">View on Instagram</a>
+        </blockquote>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 function SocialContent() {
   return (
     <section className="media-social section">
@@ -133,23 +214,14 @@ function SocialContent() {
         <div className="media-social-grid">
           {SOCIAL_CONTENT.map((s, i) => (
             <div key={i} className="media-social-card">
-              <div className="media-social-embed" dangerouslySetInnerHTML={{ __html: s.embed }}/>
+              <SocialEmbed item={s}/>
               <div className="media-social-info">
                 <h3 className="media-social-title">{s.title}</h3>
                 <div className="media-social-links">
-                  {s.urls ? (
-                    s.urls.map((u, j) => (
-                      <a key={j} href={u.url} target="_blank" rel="noopener noreferrer" className="media-social-link">
-                        <ChromeIcon name="external-link" size={12}/>
-                        View on {u.platform}
-                      </a>
-                    ))
-                  ) : (
-                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="media-social-link">
-                      <ChromeIcon name="external-link" size={12}/>
-                      View on {s.platform}
-                    </a>
-                  )}
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="media-social-link">
+                    <ChromeIcon name="external-link" size={12}/>
+                    View on {s.platform}
+                  </a>
                 </div>
               </div>
             </div>

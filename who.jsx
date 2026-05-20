@@ -106,7 +106,7 @@ function Leadership() {
             <img src="assets/team/founder.jpeg" alt="Ambassador Reverend Chukwudi Eke"/>
           </div>
           <div className="founder-body">
-            <span className="founder-badge">Founder & president</span>
+            <span className="founder-badge">Founder & Grand Patron</span>
             <h3 className="founder-name">Ambassador Reverend Chukwudi Eke</h3>
             <div className="founder-role">Founder, board chair</div>
             <p className="founder-bio">
@@ -238,8 +238,8 @@ function ContactSection() {
             <ChromeIcon name="phone" size={14}/>
             +1 617 401 5060
           </a>
-          <a href="mailto:hello@gatewaytobetterlife.org" className="btn btn-ghost-dark btn-full">
-            hello@gatewaytobetterlife.org
+          <a href="mailto:info@bettergatewayfoundation.org" className="btn btn-ghost-dark btn-full">
+            info@bettergatewayfoundation.org
             <ChromeIcon name="mail" size={14}/>
           </a>
         </div>
