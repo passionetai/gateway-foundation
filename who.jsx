@@ -100,32 +100,19 @@ function Leadership() {
           <h2 className="section-title">The people behind the work.</h2>
         </header>
 
-        {/* Grand Patron — featured row */}
+        {/* President — featured row */}
         <article className="founder-card">
           <div className="founder-photo">
-            <img src="assets/team/founder.jpeg" alt="Ambassador Reverend Chukwudi Eke"/>
+            <img src="assets/team/president.png" alt="Comrade Patrick Chiekwe"/>
           </div>
           <div className="founder-body">
-            <span className="founder-badge">Grand Patron</span>
-            <h3 className="founder-name">Ambassador Reverend Chukwudi Eke</h3>
-            <div className="founder-role">Board chair</div>
+            <span className="founder-badge">President</span>
+            <h3 className="founder-name">Comrade Patrick Chiekwe</h3>
             <p className="founder-bio">
-              Ambassador Eke is a faith leader, advocate, and humanitarian who has spent his career
-              standing alongside vulnerable communities across Nigeria. He founded Gateway to Better
-              Life Foundation to bring structured, dignified support to families affected by
-              addiction &mdash; and to those rescued from trafficking, abuse, and exploitation.
+              As President, Comrade Patrick Chiekwe leads the foundation&rsquo;s day-to-day mission &mdash;
+              working with the board, directors, and partners to advance prevention, recovery, and
+              advocacy across Nigeria.
             </p>
-            <div className="founder-meta">
-              <a
-                href="https://chuckeke.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="founder-link"
-              >
-                <ChromeIcon name="file-text" size={15}/>
-                Read full bio
-              </a>
-            </div>
           </div>
         </article>
 
@@ -147,6 +134,34 @@ function Leadership() {
             </article>
           ))}
         </div>
+
+        {/* Grand Patron — featured row */}
+        <article className="founder-card">
+          <div className="founder-photo">
+            <img src="assets/team/founder.jpeg" alt="Ambassador Reverend Chukwudi Eke"/>
+          </div>
+          <div className="founder-body">
+            <span className="founder-badge">Grand Patron</span>
+            <h3 className="founder-name">Ambassador Reverend Chukwudi Eke</h3>
+            <p className="founder-bio">
+              Ambassador Eke is a faith leader, advocate, and humanitarian who has spent his career
+              standing alongside vulnerable communities across Nigeria. He founded Gateway to Better
+              Life Foundation to bring structured, dignified support to families affected by
+              addiction &mdash; and to those rescued from trafficking, abuse, and exploitation.
+            </p>
+            <div className="founder-meta">
+              <a
+                href="https://chuckeke.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="founder-link"
+              >
+                <ChromeIcon name="file-text" size={15}/>
+                Read full bio
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );
