@@ -144,10 +144,12 @@ function Leadership() {
             <span className="founder-badge">Grand Patron</span>
             <h3 className="founder-name">Ambassador Reverend Chukwudi Eke</h3>
             <p className="founder-bio">
-              Ambassador Eke is a faith leader, advocate, and humanitarian who has spent his career
-              standing alongside vulnerable communities across Nigeria. He founded Gateway to Better
-              Life Foundation to bring structured, dignified support to families affected by
-              addiction &mdash; and to those rescued from trafficking, abuse, and exploitation.
+              Ambassador Eke serves as Grand Patron and is one of the foundation&rsquo;s most steadfast
+              supporters &mdash; a faith leader, advocate, and humanitarian who has spent his career
+              standing alongside vulnerable communities across Nigeria. He lends his voice, influence,
+              and encouragement to Gateway to Better Life Foundation, championing our mission to bring
+              structured, dignified support to families affected by addiction &mdash; and to those
+              rescued from trafficking, abuse, and exploitation.
             </p>
             <div className="founder-meta">
               <a
